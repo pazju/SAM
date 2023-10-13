@@ -4,6 +4,7 @@ import os
 import function
 import results
 import teclado
+import Secuencia_logica
 
 
 pygame.init()
@@ -128,7 +129,7 @@ while run:
         print(LI)
         level = 'MAIN_MENU'
     if level == 'SECUENCIA':
-        LAU = function.atencion(screen_width,screen_height) # FUNCION JUEGO LAU
+        LAU = Secuencia_logica.secuencia_logica() # FUNCION JUEGO LAU
         results.results(paciente, LI, PAZ, LAU)
         print(LAU)
         level = 'MAIN_MENU'
