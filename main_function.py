@@ -1,10 +1,12 @@
 import pygame   
 from pygame.locals import *
 import os
-import function
+import ATENCION
 import results
 import teclado
-import Secuencia_logica
+import SLOGICA
+import MEMORIA
+
 
 
 pygame.init()
@@ -119,17 +121,17 @@ while run:
         screen.blit(off_img, off_rect) # Fondo Pantalla Apagado
         
     if level == 'ATENCION':
-        PAZ = function.atencion(screen_width,screen_height) # Retorna level = 'MAIN_MENU' y PAZ = [Matriz de Resultados]
+        PAZ = ATENCION.atencion(screen_width,screen_height) # Retorna level = 'MAIN_MENU' y PAZ = [Matriz de Resultados]
         results.results(paciente, LI, PAZ, LAU)
         print(PAZ)
         level = 'MAIN_MENU'
     if level == 'MEMORIA':
-        LI = function.atencion(screen_width,screen_height) # FUNCION JUEGO LIDA
+        LI = MEMORIA.memoria() # FUNCION JUEGO LIDA
         results.results(paciente, LI, PAZ, LAU)
         print(LI)
         level = 'MAIN_MENU'
     if level == 'SECUENCIA':
-        LAU = Secuencia_logica.secuencia_logica() # FUNCION JUEGO LAU
+        LAU = SLOGICA.secuencia_logica() # FUNCION JUEGO LAU
         results.results(paciente, LI, PAZ, LAU)
         print(LAU)
         level = 'MAIN_MENU'

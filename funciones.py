@@ -786,10 +786,10 @@ def iniciar_juego():
 
 
 # IMAGENES FONDOS
-fondo = pygame.transform.scale(pygame.image.load("FONDOS/inicio.png").convert_alpha(), (screen_width, screen_height))
-fondo_instruc = pygame.transform.scale(pygame.image.load("FONDOS/instruc.png").convert_alpha(), (screen_width, screen_height))
-fondo_pausa = pygame.transform.scale(pygame.image.load("FONDOS/pausa.png").convert_alpha(), (screen_width, screen_height))
-fondo_resultados = pygame.transform.scale(pygame.image.load("FONDOS/resultados.png").convert_alpha(), (screen_width, screen_height))
+fondo = pygame.transform.scale(pygame.image.load("FONDOS_LI/inicio.png").convert_alpha(), (screen_width, screen_height))
+fondo_instruc = pygame.transform.scale(pygame.image.load("FONDOS_LI/instruc.png").convert_alpha(), (screen_width, screen_height))
+fondo_pausa = pygame.transform.scale(pygame.image.load("FONDOS_LI/pausa.png").convert_alpha(), (screen_width, screen_height))
+fondo_resultados = pygame.transform.scale(pygame.image.load("FONDOS_LI/resultados.png").convert_alpha(), (screen_width, screen_height))
 fondo1 = pygame.transform.scale(pygame.image.load("F_LEVEL/fondo1.png").convert_alpha(), (screen_width, screen_height))
 
 
@@ -943,7 +943,7 @@ def q_nivel_prueba():
     yes_no_question = True
     paused_game = False
 
-    nivel_prueba = pygame.transform.scale(pygame.image.load("FONDOS/nivel_prueba.png").convert_alpha(), (screen_width, screen_height))
+    nivel_prueba = pygame.transform.scale(pygame.image.load("FONDOS_LI/nivel_prueba.png").convert_alpha(), (screen_width, screen_height))
     screen.blit(nivel_prueba, (0,0)) # Función que dibuja el fondo
 
 
