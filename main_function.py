@@ -5,7 +5,7 @@ import ATENCION
 import results
 import teclado
 import SLOGICA
-import MEMORIA
+import memoria
 
 
 
@@ -126,7 +126,7 @@ while run:
         print(PAZ)
         level = 'MAIN_MENU'
     if level == 'MEMORIA':
-        LI = MEMORIA.memoria() # FUNCION JUEGO LIDA
+        LI = memoria.memoria() # FUNCION JUEGO LIDA
         results.results(paciente, LI, PAZ, LAU)
         print(LI)
         level = 'MAIN_MENU'
