@@ -5,7 +5,7 @@ import ATENCION
 import results
 import teclado
 import SLOGICA
-import memoria
+import MEMORIA
 
 
 

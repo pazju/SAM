@@ -321,7 +321,9 @@ def atencion(screen_width, screen_height):
                 cv2.namedWindow('Frame',cv2.WND_PROP_FULLSCREEN)
                 cv2.setWindowProperty('Frame',cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
                 cv2.imshow('Frame', frame)
-                if cv2.waitKey(vel) & 0xFF == ord('q'):
+                key = cv2.waitKey(vel)
+                #if cv2.waitKey(vel) & 0xFF == ord('a'):
+                if key == ord('a') or key == ord('A'):
                     break
             else:
                 break
@@ -569,7 +571,8 @@ def atencion(screen_width, screen_height):
         clock.tick(fps)
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_s: # Cerrar juego con tecla "S", actualmente
+                #SOLO podrá cerrar el juego en las pantallas donde exista la opción (logo de salir) # Cerrar juego con tecla "S", actualmente
+                if event.key == pygame.K_s and (level == 'PAUSE' or level == 'T0' or level == 'INTRO_SAM' or level == 'TUTO_1' or level == 'TUTO_2' or level == 'results_l1' or level == 'results_l2' or level == 'results_l3' or level == 'results_l4' or level == 'results_l5' or level == 'FINAL'):
                     run = False
                     return PAZ
                     #return main, PAZ
@@ -944,7 +947,8 @@ def atencion(screen_width, screen_height):
             actual_level = 'TUTO_1'
             pygame.mixer.Sound.play(sTuto_1)
             if video_tuto_1 == 1:
-                    play_video(tuto, 15, screen_width, screen_height)
+                    #play_video(tuto, 15, screen_width, screen_height) # PAZ
+                    play_video(tuto, 10, screen_width, screen_height) # MINI PC
                     video_tuto_1 = 0
             pygame.mixer.Sound.stop(sTuto_1)   
             screen.blit(levelEND_img, levelEND_rect)
@@ -971,7 +975,8 @@ def atencion(screen_width, screen_height):
             actual_level = 'TUTO_2'
             pygame.mixer.Sound.play(sTuto_2)
             if video_tuto_2 == 1:
-                play_video(tuto_2, 20, screen_width, screen_height)
+                #play_video(tuto_2, 20, screen_width, screen_height) #PAZ
+                play_video(tuto_2, 15, screen_width, screen_height) # MINI PC
                 video_tuto_2 = 0
             pygame.mixer.Sound.stop(sTuto_2)   
             screen.blit(levelEND_img, levelEND_rect)
