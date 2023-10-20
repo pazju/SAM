@@ -126,7 +126,7 @@ while run:
         print(PAZ)
         level = 'MAIN_MENU'
     if level == 'MEMORIA':
-        LI = memoria.memoria() # FUNCION JUEGO LIDA
+        LI = MEMORIA.memoria() # FUNCION JUEGO LIDA
         results.results(paciente, LI, PAZ, LAU)
         print(LI)
         level = 'MAIN_MENU'
