@@ -1,8 +1,8 @@
 import aspose.pdf as pdf
 import datetime
 # Set the source files directory path
-filePath = "C:/Users/USUARIO/Desktop/pdf_python/"
-#filePath = "C:/Users/USER/Desktop/pdf_python/"
+#filePath = "C:/Users/USUARIO/Desktop/pdf_python/"
+filePath = "C:/Users/USER/Desktop/pdf_python/"
 #paciente = "Juan"
 
 def results(paciente, LI, PAZ, LAU):

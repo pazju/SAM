@@ -1717,5 +1717,4 @@ def secuencia_logica():
 
     return(matriz)
 
-resultado = secuencia_logica()
-print(resultado)
+
