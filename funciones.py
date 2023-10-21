@@ -232,7 +232,7 @@ start_timer_event = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - I
 start_timer_active = False # Variable para controlar si el temporizador está o no activo
 used_time_1 = 0
 unused_time_1 = 0
-time_limit_1 = 20
+time_limit_1 = 60
 
 # Cronometro segundo nivel
 start_time_2 = 0 #0s
@@ -241,7 +241,7 @@ start_timer_event_2 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_2 = False # Variable para controlar si el temporizador está o no activo
 used_time_2 = 0
 unused_time_2 = 0
-time_limit_2 = 20
+time_limit_2 = 60
 
 # Cronometro tercer nivel
 start_time_3 = 0 #0s
@@ -250,7 +250,7 @@ start_timer_event_3 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_3 = False # Variable para controlar si el temporizador está o no activo
 used_time_3 = 0
 unused_time_3 = 0
-time_limit_3 = 20
+time_limit_3 = 120
 
 # Cronometro cuarto nivel
 start_time_4 = 0 #0s
@@ -259,7 +259,7 @@ start_timer_event_4 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_4 = False # Variable para controlar si el temporizador está o no activo
 used_time_4 = 0
 unused_time_4 = 0
-time_limit_4 = 20
+time_limit_4 = 120
 
 # Cronometro quinto nivel
 start_time_5 = 0 #0s
@@ -268,7 +268,7 @@ start_timer_event_5 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_5 = False # Variable para controlar si el temporizador está o no activo
 used_time_5 = 0
 unused_time_5 = 0
-time_limit_5 = 20
+time_limit_5 = 120
 
 # Cronometro sexto nivel
 start_time_6 = 0 #0s
@@ -277,7 +277,7 @@ start_timer_event_6 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_6 = False # Variable para controlar si el temporizador está o no activo
 used_time_6 = 0
 unused_time_6 = 0
-time_limit_6 = 20
+time_limit_6 = 120
 
 # Cronometro septimo nivel
 start_time_7 = 0 #0s
@@ -286,7 +286,7 @@ start_timer_event_7 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_7 = False # Variable para controlar si el temporizador está o no activo
 used_time_7 = 0
 unused_time_7 = 0
-time_limit_7 = 20
+time_limit_7 = 120
 
 # Cronometro octavo nivel
 start_time_8 = 0 #0s
@@ -295,7 +295,7 @@ start_timer_event_8 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_8 = False # Variable para controlar si el temporizador está o no activo
 used_time_8 = 0
 unused_time_8 = 0
-time_limit_8 = 20
+time_limit_8 = 240
 
 # Cronometro noveno nivel
 start_time_9 = 0 #0s
@@ -304,7 +304,7 @@ start_timer_event_9 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_9 = False # Variable para controlar si el temporizador está o no activo
 used_time_9 = 0
 unused_time_9 = 0
-time_limit_9 = 20
+time_limit_9 = 240
 
 # Cronometro decimo nivel
 start_time_10 = 0 #0s
@@ -313,7 +313,7 @@ start_timer_event_10 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 
 start_timer_active_10 = False # Variable para controlar si el temporizador está o no activo
 used_time_10 = 0
 unused_time_10 = 0
-time_limit_10 = 20
+time_limit_10 = 240
 
 # Movimiento del cursor
 pointer = pygame.image.load("F_LEVEL/pointer.png")
