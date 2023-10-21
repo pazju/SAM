@@ -31,8 +31,8 @@ def secuencia_logica():
     timer_activo = False
     
     # Estados
-    estado = 'MENU'
-    estado_anterior = 'MENU'
+    estado = 'NIVEL_9'#'MENU'
+    estado_anterior = 'RESULTADOS'#'MENU'
     
 
     levelEND_img = pygame.image.load("FONDOS/Fondo Saludarte.png")
@@ -61,7 +61,7 @@ def secuencia_logica():
     # Variables No Boleanas.
     nivel = 0
     intento = 2
-    temporal = 0
+    temporal = 10#0
     temporal_t0 = 0
     velocidad = 0
     unico = 0
