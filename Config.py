@@ -49,13 +49,89 @@ aux_intento = 0
 
 
 #.... Sonidos .............  #
-# Nivel 1 
-sL0_1 = pygame.mixer.Sound("AUDIOS/intro_1.mp3")
-sL0_2 = pygame.mixer.Sound("AUDIOS/intro_2.mp3")
-sL0_3 = pygame.mixer.Sound("AUDIOS/Instrucciones.mp3")
-sL0_4 = pygame.mixer.Sound("AUDIOS/Intro_personaje.mp3")
-sL0_5 = pygame.mixer.Sound("AUDIOS/descripcion_n0.mp3")
-sL0_6 = pygame.mixer.Sound("AUDIOS/logro.mp3")
-sL0_7 = pygame.mixer.Sound("AUDIOS/Mal.mp3")
+# Nivel 0
+sL0_1 = pygame.mixer.Sound("AUDIOS/synthesize (53).mp3")
+sL0_2 = pygame.mixer.Sound("AUDIOS/Instrucciones.mp3")
+sL0_3 = pygame.mixer.Sound("AUDIOS/synthesize (54).mp3")
+sL0_4 = pygame.mixer.Sound("AUDIOS/synthesize (5).mp3")
+# Tarjetas
+sL0_5 = pygame.mixer.Sound("AUDIOS/synthesize (6).mp3")
+sL0_6 = pygame.mixer.Sound("AUDIOS/synthesize (7).mp3")
+sL0_7 = pygame.mixer.Sound("AUDIOS/synthesize (8).mp3")
+sL0_8 = pygame.mixer.Sound("AUDIOS/synthesize (9).mp3")
 
-sL1_1 = pygame.mixer.Sound('AUDIOS/descripcion_n1.mp3') 
+# Se acabó el tiempo
+sL0_9 = pygame.mixer.Sound("AUDIOS/synthesize (10).mp3")
+
+# Nivel 1
+sL1_1 = pygame.mixer.Sound("AUDIOS/synthesize (11).mp3")
+# Tarjetas
+sL1_2 = pygame.mixer.Sound("AUDIOS/synthesize (12).mp3")
+sL1_3 = pygame.mixer.Sound("AUDIOS/synthesize (13).mp3")
+sL1_4 = pygame.mixer.Sound("AUDIOS/synthesize (14).mp3")
+sL1_5 = pygame.mixer.Sound("AUDIOS/synthesize (15).mp3")
+
+# Nivel 2
+sL2_1 = pygame.mixer.Sound("AUDIOS/synthesize (16).mp3")
+# Tarjetas
+sL2_2 = pygame.mixer.Sound("AUDIOS/synthesize (17).mp3")
+sL2_3 = pygame.mixer.Sound("AUDIOS/synthesize (18).mp3")
+sL2_4 = pygame.mixer.Sound("AUDIOS/synthesize (19).mp3")
+sL2_5 = pygame.mixer.Sound("AUDIOS/synthesize (20).mp3")
+
+# Nivel 3
+sL3_1 = pygame.mixer.Sound("AUDIOS/synthesize (21).mp3")
+# Tarjetas
+sL3_2 = pygame.mixer.Sound("AUDIOS/synthesize (22).mp3")
+sL3_3 = pygame.mixer.Sound("AUDIOS/synthesize (23).mp3")
+sL3_4 = pygame.mixer.Sound("AUDIOS/synthesize (24).mp3")
+sL3_5 = pygame.mixer.Sound("AUDIOS/synthesize (25).mp3")
+
+# Nivel 4
+sL4_1 = pygame.mixer.Sound("AUDIOS/synthesize (26).mp3")
+# Tarjetas
+sL4_2 = pygame.mixer.Sound("AUDIOS/synthesize (27).mp3")
+sL4_3 = pygame.mixer.Sound("AUDIOS/synthesize (28).mp3")
+sL4_4 = pygame.mixer.Sound("AUDIOS/synthesize (29).mp3")
+sL4_5 = pygame.mixer.Sound("AUDIOS/synthesize (30).mp3")
+
+# Nivel 5
+sL5_1 = pygame.mixer.Sound("AUDIOS/synthesize (31).mp3")
+# Tarjetas
+sL5_2 = pygame.mixer.Sound("AUDIOS/synthesize (32).mp3")
+sL5_3 = pygame.mixer.Sound("AUDIOS/synthesize (33).mp3")
+sL5_4 = pygame.mixer.Sound("AUDIOS/synthesize (34).mp3")
+sL5_5 = pygame.mixer.Sound("AUDIOS/synthesize (33).mp3")
+
+# Nivel 6
+sL6_1 = pygame.mixer.Sound("AUDIOS/synthesize (35).mp3")
+# Tarjetas
+sL6_2 = pygame.mixer.Sound("AUDIOS/synthesize (36).mp3")
+sL6_3 = pygame.mixer.Sound("AUDIOS/synthesize (37).mp3")
+sL6_4 = pygame.mixer.Sound("AUDIOS/synthesize (38).mp3")
+sL6_5 = pygame.mixer.Sound("AUDIOS/synthesize (39).mp3")
+
+# Nivel 7
+sL7_1 = pygame.mixer.Sound("AUDIOS/synthesize (55).mp3")
+# Tarjetas
+sL7_2 = pygame.mixer.Sound("AUDIOS/synthesize (40).mp3")
+sL7_3 = pygame.mixer.Sound("AUDIOS/synthesize (41).mp3")
+sL7_4 = pygame.mixer.Sound("AUDIOS/synthesize (42).mp3")
+sL7_5 = pygame.mixer.Sound("AUDIOS/synthesize (43).mp3")
+
+# Nivel 8
+sL8_1 = pygame.mixer.Sound("AUDIOS/synthesize (44).mp3")
+# Tarjetas
+sL8_2 = pygame.mixer.Sound("AUDIOS/synthesize (45).mp3")
+sL8_3 = pygame.mixer.Sound("AUDIOS/synthesize (46).mp3")
+sL8_4 = pygame.mixer.Sound("AUDIOS/synthesize (47).mp3")
+sL8_5 = pygame.mixer.Sound("AUDIOS/synthesize (48).mp3")
+
+# Nivel 9
+sL9_1 = pygame.mixer.Sound("AUDIOS/synthesize (57).mp3")
+# Tarjetas
+sL9_2 = pygame.mixer.Sound("AUDIOS/synthesize (49).mp3")
+sL9_3 = pygame.mixer.Sound("AUDIOS/synthesize (50).mp3")
+sL9_4 = pygame.mixer.Sound("AUDIOS/synthesize (51).mp3")
+sL9_5 = pygame.mixer.Sound("AUDIOS/synthesize (52).mp3")
+sL_10 = pygame.mixer.Sound("AUDIOS/synthesize (59).mp3") 
