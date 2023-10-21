@@ -16,6 +16,54 @@ def memoria():
         if funciones.game_state == 'q_nivel_prueba':
             funciones.q_nivel_prueba()
 
+        if funciones.game_state == 'video_protesis1':
+            funciones.video_protesis1()
+
+        if funciones.game_state == 'video_instrumentos':
+            funciones.video_instrumentos()
+
+        if funciones.game_state == 'cont_rutina':
+            funciones.cont_rutina()
+
+        if funciones.game_state == 'personaje':
+            funciones.personaje()
+
+        if funciones.game_state == 'video_enjuague_agua':
+            funciones.video_enjuague_agua()
+
+        if funciones.game_state == 'video_sostener_hilo':
+            funciones.video_sostener_hilo()
+
+        if funciones.game_state == 'video_mover_hilo':
+            funciones.video_mover_hilo()
+
+        if funciones.game_state == 'video_ubicar_cepillo':
+            funciones.video_ubicar_cepillo()
+
+        if funciones.game_state == 'video_cepillar_circulos':
+            funciones.video_cepillar_circulos()
+
+        if funciones.game_state == 'video_enjuague_crema':
+            funciones.video_enjuague_crema()
+
+        if funciones.game_state == 'video_enjuague_bucal':
+            funciones.video_enjuague_bucal()
+
+        if funciones.game_state == 'exp_protesis2':
+            funciones.exp_protesis2()
+
+        if funciones.game_state == 'exp_prot2':
+            funciones.exp_prot2()     
+
+        if funciones.game_state == 'juego_fin':
+            funciones.juego_fin()  
+
+        if funciones.game_state == 'first_level_card':
+            funciones.first_level_card()         
+        
+        if funciones.game_state == 'id_niveles':
+            funciones.id_niveles()   
+
     #-------------------------------------------------Primero
         if funciones.game_state == 'first_level':
             funciones.first_level()
@@ -303,7 +351,15 @@ def memoria():
                 if event.key == pygame.K_x: # Tecla  para continuar con el juego
                     funciones.cont_game = True
                 if event.key == pygame.K_o: # Tecla reinicio
-                    funciones.reinicio = True                   
+                    funciones.reinicio = True 
+                if event.key == pygame.K_v and funciones.game_state == 'personaje':
+                    funciones.s1 = True
+                if event.key == pygame.K_n and funciones.game_state == 'personaje':
+                    funciones.s2 = True  
+                if event.key == pygame.K_c and funciones.game_state == 'personaje':
+                    funciones.s3 = True    
+                if event.key == pygame.K_e and funciones.game_state == 'personaje':
+                    funciones.s4 = True               
                         
                 # Si hicieron clic y el usuario puede jugar...
                 # Primer nivel seleccionar tarjeta con tecla b
@@ -407,6 +463,7 @@ def memoria():
                     funciones.start_time = 0
                     pygame.time.set_timer(funciones.start_timer_event, 0)
                     funciones.start_timer_active = False
+                    funciones.ganar_rein1 = 0
                     funciones.game_state = 'reflection_1'
                     funciones.used_time_1 = funciones.time_limit_1
                     funciones.unused_time_1 = 0
@@ -665,53 +722,6 @@ def memoria():
         pygame.display.update() # Actualiza Display
         funciones.resultados()
 
-    funciones.open_game = True
-    funciones.game_state ='intro'
-    funciones.acierto_1 = 0
-    funciones.acierto_2 = 0
-    funciones.acierto_3 = 0
-    funciones.acierto_4 = 0
-    funciones.acierto_5 = 0
-    funciones.acierto_6 = 0
-    funciones.acierto_7 = 0
-    funciones.acierto_8 = 0
-    funciones.acierto_9 = 0
-    funciones.acierto_10 = 0
-    funciones.error_1 = 0
-    funciones.error_2 = 0
-    funciones.error_3 = 0
-    funciones.error_4 = 0
-    funciones.error_5 = 0
-    funciones.error_6 = 0
-    funciones.error_7 = 0
-    funciones.error_8 = 0
-    funciones.error_9 = 0
-    funciones.error_10 = 0
-    funciones.used_time_1 = 0
-    funciones.used_time_2 = 0
-    funciones.used_time_3 = 0
-    funciones.used_time_4 = 0
-    funciones.used_time_5 = 0
-    funciones.used_time_6 = 0
-    funciones.used_time_7 = 0
-    funciones.used_time_8 = 0
-    funciones.used_time_9 = 0
-    funciones.used_time_10 = 0
-    funciones.unused_time_1 = 0
-    funciones.unused_time_2 = 0
-    funciones.unused_time_3 = 0
-    funciones.unused_time_4 = 0
-    funciones.unused_time_5 = 0
-    funciones.unused_time_6 = 0
-    funciones.unused_time_7 = 0
-    funciones.unused_time_8 = 0
-    funciones.unused_time_9 = 0
-    funciones.unused_time_10 = 0
+    funciones.reiniciar_variables()
 
-
-
-    #pygame.quit() # Se cierra pygame
-    #quit() # Cierra Aplicación
     return funciones.LI
-
-    
