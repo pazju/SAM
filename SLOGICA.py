@@ -78,7 +78,7 @@ def secuencia_logica():
         [0,0,0,0,0],
         [0,0,0,0,0],
         [0,0,0,0,0],
-    ];
+    ]
 
 
     # Imagenes tarjetas nivel 0
