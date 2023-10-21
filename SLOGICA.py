@@ -31,8 +31,8 @@ def secuencia_logica():
     timer_activo = False
     
     # Estados
-    estado = 'NIVEL_9'#'MENU'
-    estado_anterior = 'RESULTADOS'#'MENU'
+    estado = 'MENU'
+    estado_anterior = 'MENU'
     
 
     levelEND_img = pygame.image.load("FONDOS/Fondo Saludarte.png")
@@ -61,7 +61,7 @@ def secuencia_logica():
     # Variables No Boleanas.
     nivel = 0
     intento = 2
-    temporal = 10#0
+    temporal = 0
     temporal_t0 = 0
     velocidad = 0
     unico = 0
@@ -1707,7 +1707,7 @@ def secuencia_logica():
             pygame.display.update()
             print("Entro")
             pygame.mixer.Channel.stop(channel)
-            ruta = 'FONDOS/Tutorial final.mp4'  
+            ruta = 'FONDOS/Tutorial_final.mp4'  
             velocidad = 15
             channel.queue(sL_10)
             rv.reproducir_video(ruta, width, height, velocidad)
