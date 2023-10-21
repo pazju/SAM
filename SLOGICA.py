@@ -1,4 +1,3 @@
-
 import cv2
 import pygame
 import sys
@@ -518,6 +517,7 @@ def secuencia_logica():
                 channel.queue(sL0_6)
                 velocidad = 15
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_verde == True) and (tiempo_inicio <= 0) and ((nivel == 0) and (intento>=0))):  
@@ -530,6 +530,7 @@ def secuencia_logica():
                 velocidad = 15
                 channel.queue(sL0_7)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and (tiempo_inicio <= 0) and ((nivel == 0) and (intento>=0))): 
@@ -542,6 +543,7 @@ def secuencia_logica():
                 velocidad = 15
                 channel.queue(sL0_8)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -644,6 +646,7 @@ def secuencia_logica():
                 velocidad = 15
                 channel.queue(sL1_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and (nivel == 1) and (intento>=0) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -657,6 +660,7 @@ def secuencia_logica():
                 screen.fill(BLACK)
                 #print ("Pantalla negra de t roja del nivel 1")
                 pygame.display.update()
+                pygame.mixer.Channel.stop(channel)
                 
                 
 
@@ -668,6 +672,7 @@ def secuencia_logica():
                 velocidad = 15
                 channel.queue(sL1_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 1) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -678,6 +683,7 @@ def secuencia_logica():
                 velocidad = 15
                 channel.queue(sL1_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -768,7 +774,7 @@ def secuencia_logica():
                 
             #pygame.display.update()
 
-            if ((t_roja == True) and ((nivel == 2) and (intento>=0))):     
+            if ((t_roja == True) and ((nivel == 2) and (intento>=0)) and (tiempo_inicio <= 0)):     
                 t_roja = False
                 aciertos = 0
                 intento = intento - 1 
@@ -776,8 +782,9 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL2_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
-            if ((t_amarillo == True) and ((nivel == 2) and (intento>=0))):   
+            if ((t_amarillo == True) and ((nivel == 2) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
                 aciertos = 0
                 intento = intento - 1
@@ -785,18 +792,20 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL2_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
-            if ((t_verde == True) and ((nivel == 2) and (intento>=0))):  
+            if ((t_verde == True) and ((nivel == 2) and (intento>=0)) and (tiempo_inicio <= 0)):  
                 t_verde = False 
                 aciertos = 1 
                 ruta = 'FONDOS/Bien.mp4' 
                 velocidad = 22
                 channel.queue(sL2_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
-            if ((t_azul == True) and ((nivel == 2) and (intento>=0))): 
+            if ((t_azul == True) and ((nivel == 2) and (intento>=0)) and (tiempo_inicio <= 0)): 
                 t_azul = False
                 aciertos = 0
                 intento = intento - 1    
@@ -804,6 +813,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL2_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -902,6 +912,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL3_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and ((nivel == 3) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -911,6 +922,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL3_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
             if ((t_verde == True) and ((nivel == 3) and (intento>=0)) and (tiempo_inicio <= 0)):  
@@ -920,6 +932,7 @@ def secuencia_logica():
                 velocidad = 22
                 channel.queue(sL3_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 3) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -930,6 +943,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL3_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -1029,6 +1043,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL4_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and ((nivel == 4) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -1038,6 +1053,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL4_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
             if ((t_verde == True) and ((nivel == 4) and (intento>=0)) and (tiempo_inicio <= 0)):  
@@ -1048,6 +1064,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL4_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 4) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -1057,6 +1074,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL4_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -1156,6 +1174,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL5_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and ((nivel == 5) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -1165,6 +1184,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL5_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
             if ((t_verde == True) and ((nivel == 5) and (intento>=0)) and (tiempo_inicio <= 0)):  
@@ -1174,6 +1194,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL5_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 5) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -1184,6 +1205,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL5_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -1283,6 +1305,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL6_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and ((nivel == 6) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -1292,6 +1315,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL6_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
             if ((t_verde == True) and ((nivel == 6) and (intento>=0)) and (tiempo_inicio <= 0)):  
@@ -1302,6 +1326,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL6_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 6) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -1311,6 +1336,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL6_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -1410,6 +1436,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL7_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and ((nivel == 7) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -1418,6 +1445,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL7_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
             if ((t_verde == True) and ((nivel == 7) and (intento>=0)) and (tiempo_inicio <= 0)):  
@@ -1428,6 +1456,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL7_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 7) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -1438,6 +1467,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL7_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -1537,6 +1567,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL8_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and ((nivel == 8) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -1546,6 +1577,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL8_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
             if ((t_verde == True) and ((nivel == 8) and (intento>=0)) and (tiempo_inicio <= 0)):  
@@ -1556,6 +1588,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL8_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 8) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -1565,6 +1598,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL8_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -1663,6 +1697,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL9_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
             
             if ((t_amarillo == True) and ((nivel == 9) and (intento>=0)) and (tiempo_inicio <= 0)):   
                 t_amarillo = False 
@@ -1672,6 +1707,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL9_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
         
 
             if ((t_verde == True) and ((nivel == 9) and (intento>=0)) and (tiempo_inicio <= 0)):  
@@ -1682,6 +1718,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL9_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
                 
 
             if ((t_azul == True) and ((nivel == 9) and (intento>=0)) and (tiempo_inicio <= 0)): 
@@ -1692,6 +1729,7 @@ def secuencia_logica():
                 velocidad = 16
                 channel.queue(sL9_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
+                pygame.mixer.Channel.stop(channel)
 
             if ((intento == 0) or (aciertos == 1)):
                 tiempo_utilizado = tiempo # Reemplaza con el valor real
@@ -1707,7 +1745,7 @@ def secuencia_logica():
             pygame.display.update()
             print("Entro")
             pygame.mixer.Channel.stop(channel)
-            ruta = 'FONDOS/Tutorial_final.mp4'  
+            ruta = 'FONDOS/Tutorialf-inal.mp4'  
             velocidad = 15
             channel.queue(sL_10)
             rv.reproducir_video(ruta, width, height, velocidad)
@@ -1716,5 +1754,6 @@ def secuencia_logica():
         pygame.display.update()
 
     return(matriz)
+
 
 
