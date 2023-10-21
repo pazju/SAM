@@ -24,7 +24,7 @@ def reproducir_video(ruta, width, height, velocidad):
             cv2.imshow('Frame', frame)
 
             # Ajusta el tiempo de espera para acelerar la reproducción (más pequeño = más rápido)
-            if cv2.waitKey(velocidad) & 0xFF == ord('s'):
+            if cv2.waitKey(velocidad) & 0xFF == ord('a'):
                 break
         else:
         # Break the loop if there are no more frames to read
