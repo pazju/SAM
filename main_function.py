@@ -25,7 +25,7 @@ color_purple = (142,68,173)
 color_bluep = (33,97,140)
 
 # SOUNDS
-
+sUSB = pygame.mixer.Sound("Assets/menu/USB.mp3")
 print (screen_width, screen_height)
 # DIMENSIONES DISPONIBLES
 # Pantalla de mi PC [1366x768]
@@ -59,6 +59,9 @@ sam_rect = sam_img.get_rect(center = (tile_size_x*10,tile_size_y*4.9))
 off_img = pygame.image.load("Assets/menu/off.png")
 off_img = pygame.transform.scale(off_img, (tile_size_x*20, tile_size_y*16))
 off_rect = off_img.get_rect(center = (tile_size_x*10,tile_size_y*8))
+usb_img = pygame.image.load("Assets/menu/usb.png")
+usb_img = pygame.transform.scale(usb_img, (tile_size_x*20, tile_size_y*16))
+usb_rect = usb_img.get_rect(center = (tile_size_x*10,tile_size_y*8))
 # continue_img = pygame.image.load("Assets/Icons/Kenney_gameIcons/PNG/Black/2x/fastForward.png")
 # exit_img = pygame.image.load("Assets/Icons/Kenney_gameIcons/PNG/Black/2x/exit.png")
 # restart_img = pygame.image.load("Assets/Icons/Kenney_gameIcons/PNG/Black/2x/return.png")
@@ -79,6 +82,8 @@ LAU = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[
 paciente = 'Jugador_1'
 level = 'INICIO' # 
 run = True
+filePath = "D:/RESULTADOS_SAM/"
+audio_usb = 0
 while run:
     clock.tick(fps)
     for event in pygame.event.get():
@@ -92,7 +97,7 @@ while run:
                 PAZ = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
                 LAU = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
                 level = 'JUGADOR'
-            if event.key == pygame.K_i and level == 'MAIN_MENU': # Pantalla de Apagado
+            if event.key == pygame.K_i and (level == 'MAIN_MENU' or level == 'NO_USB'): # Pantalla de Apagado
                 level = 'APAGADO'
             if event.key == pygame.K_n and level == 'MAIN_MENU': # Iniciar Juego Atención
                 level = 'ATENCION'
@@ -105,12 +110,24 @@ while run:
             if event.key == pygame.K_c and level == 'APAGADO': # Apagar Sistema
                 os.system("shutdown /s /t 1")
                 run = False 
+            if event.key == pygame.K_a and level == 'NO_USB':
+                level = 'INICIO'
         if event.type == pygame.QUIT:
             run = False
 
+    
     if level == 'INICIO':
+        if not os.path.exists(filePath):
+            audio_usb = 1
+            level = 'NO_USB'
         screen.blit(inicio_img, inicio_rect) # Fondo Pantalla Final  
-        screen.blit(sam_img, sam_rect) # Fondo Pantalla Final 
+        screen.blit(sam_img, sam_rect) # Fondo Pantalla Final
+          
+    if level == 'NO_USB':
+        if audio_usb == 1:
+            pygame.mixer.Sound.play(sUSB)
+            audio_usb = 0
+        screen.blit(usb_img, usb_rect) # Pantalla Alerta USB
 
     if level == 'MAIN_MENU':
         screen.blit(menu_img, menu_rect) # Fondo Pantalla Menu
