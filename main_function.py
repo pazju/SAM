@@ -6,6 +6,7 @@ import results
 import teclado
 import SLOGICA
 import MEMORIA
+import sys
 
 
 
@@ -84,8 +85,13 @@ level = 'INICIO' #
 run = True
 filePath = "D:/RESULTADOS_SAM/"
 audio_usb = 0
+delay = 2000  # 2 seconds
+
+
+
 while run:
     clock.tick(fps)
+    pygame.time.delay(delay)
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_a and level == 'INICIO': # Pantalla Nuevo Jugador

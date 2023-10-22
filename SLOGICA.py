@@ -1745,7 +1745,7 @@ def secuencia_logica():
             pygame.display.update()
             print("Entro")
             pygame.mixer.Channel.stop(channel)
-            ruta = 'FONDOS/Tutorialf-inal.mp4'  
+            ruta = 'FONDOS/Tutorial_final.mp4'  
             velocidad = 15
             channel.queue(sL_10)
             rv.reproducir_video(ruta, width, height, velocidad)
