@@ -1771,17 +1771,17 @@ def atencion(screen_width, screen_height):
             screen.blit(final_img, final_rect) # Fondo Pantalla Final
             
             draw_text("Salir",30, color_black, tile_size_x*18.5, tile_size_y*14)
-            draw_text("Reiniciar",30, color_black, tile_size_x*1.5, tile_size_y*14)
+            #draw_text("Reiniciar",30, color_black, tile_size_x*1.5, tile_size_y*14)
             channel = pygame.mixer.Channel(0)
             if audio_end == 1:
                 channel.queue(sEnd)
                 audio_end = 0 
-            if res == True:
-                res = False
-                audio_intro = 1
-                video_tuto_1 = 1
-                video_tuto_2 = 1
-                level = 'INTRO_SAM'
+            # if res == True:
+            #     res = False
+            #     audio_intro = 1
+            #     video_tuto_1 = 1
+            #     video_tuto_2 = 1
+            #     level = 'INTRO_SAM'
             
 
             pygame.display.update()    
