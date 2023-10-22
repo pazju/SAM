@@ -85,20 +85,17 @@ level = 'INICIO' #
 run = True
 filePath = "D:/RESULTADOS_SAM/"
 audio_usb = 0
-delay = 2000  # 2 seconds
-
-
 
 while run:
     clock.tick(fps)
-    pygame.time.delay(delay)
+    
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_a and level == 'INICIO': # Pantalla Nuevo Jugador
                 level = 'JUGADOR'
             if event.key == pygame.K_i and level == 'INICIO': # Pantalla de Apagado
                 level = 'APAGADO'    
-            if event.key == pygame.K_s and level == 'MAIN_MENU': # Pantalla Nuevo Jugador
+            if event.key == pygame.K_o and level == 'MAIN_MENU': # Pantalla Nuevo Jugador
                 LI = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
                 PAZ = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
                 LAU = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
