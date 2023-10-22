@@ -120,6 +120,10 @@ while run:
                 level = 'INICIO'
         if event.type == pygame.QUIT:
             run = False
+        if event.type == (not os.path.exists(filePath)):
+            audio_usb = 1
+            level = 'NO_USB'
+
 
     
     if level == 'INICIO':
@@ -136,10 +140,16 @@ while run:
         screen.blit(usb_img, usb_rect) # Pantalla Alerta USB
 
     if level == 'MAIN_MENU':
+        if not os.path.exists(filePath):
+            audio_usb = 1
+            level = 'NO_USB'
         screen.blit(menu_img, menu_rect) # Fondo Pantalla Menu
         screen.blit(sam_img, sam_rect) # Imagen SAM (Personaje) 
     
     if level == 'JUGADOR':
+        LI = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+        PAZ = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
+        LAU = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
         paciente = teclado.virtual_keyboard()
         level = 'MAIN_MENU'
 
