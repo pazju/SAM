@@ -1302,7 +1302,7 @@ def atencion(screen_width, screen_height):
                     if audio_3_11 == 1:
                         channel.queue(sL3_11)
                         audio_3_11 = 0
-                    channel.queue(sL3_2)
+                    #channel.queue(sL3_2)
                     total_error_l3 += 1
                     level_3_error = 1
                     level = 0
@@ -1346,7 +1346,7 @@ def atencion(screen_width, screen_height):
                 if audio_3_11 == 1:
                     channel.queue(sL3_11)
                     audio_3_11 = 0
-                channel.queue(sL3_2)
+                #channel.queue(sL3_2)
                 total_error_l3 += 1
                 level_3_error = 1
                 level = 0
