@@ -88,6 +88,9 @@ while run:
             if event.key == pygame.K_i and level == 'INICIO': # Pantalla de Apagado
                 level = 'APAGADO'    
             if event.key == pygame.K_s and level == 'MAIN_MENU': # Pantalla Nuevo Jugador
+                LI = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+                PAZ = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
+                LAU = [[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0],[0,0,0,0,0]]
                 level = 'JUGADOR'
             if event.key == pygame.K_i and level == 'MAIN_MENU': # Pantalla de Apagado
                 level = 'APAGADO'
