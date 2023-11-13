@@ -453,6 +453,7 @@ def memoria():
                     pygame.time.set_timer(funciones.timer_event, 0)
                     funciones.timer_active = False
                     funciones.game_state = 'Fst_level'
+                    funciones.timer_text = funciones.timer_font.render("20", True, funciones.color_black)
                     ##Puedo poner variables para cambiar de nivel o pantallas
 
             # Temporizador del primer nivel
@@ -467,11 +468,12 @@ def memoria():
                     funciones.game_state = 'reflection_1'
                     funciones.used_time_1 = funciones.time_limit_1
                     funciones.unused_time_1 = 0
-
+                    funciones.start_timer_text = funciones.timer_font.render("0", True, funciones.color_black)
                 if  funciones.aux_cronometro: 
                     pygame.time.set_timer(funciones.start_timer_event, 0)
                     funciones.start_timer_active = False
                     funciones.aux_cronometro = False
+                    funciones.start_timer_text = funciones.timer_font.render("0", True, funciones.color_black)
 
 
                 ##Puedo poner variables para cambiar de nivel o pantallas
@@ -485,6 +487,7 @@ def memoria():
                     funciones.timer_active_2 = False
                     pygame.time.set_timer(funciones.timer_event_2, 0)
                     funciones.game_state = 'Scnd_level'
+                    funciones.timer_text_2 = funciones.timer_font_2.render("15", True, funciones.color_black)
 
             # Temporizador del segundo
             if event.type == funciones.start_timer_event_2 and funciones.game_state == 'Scnd_level': 
@@ -497,11 +500,12 @@ def memoria():
                     funciones.game_state = 'reflection_2'
                     funciones.used_time_2 = funciones.time_limit_2
                     funciones.unused_time_2 = 0
-
+                    funciones.start_timer_text_2 = funciones.timer_font.render("0", True, funciones.color_black)
                 if  funciones.aux_cronometro2: 
                     pygame.time.set_timer(funciones.start_timer_event_2, 0)
                     funciones.start_timer_active_2 = False
                     funciones.aux_cronometro2 = False
+                    funciones.start_timer_text_2 = funciones.timer_font.render("0", True, funciones.color_black)
         
 
             #-----------------Tiempos tercer nivel-----------------------------
@@ -513,6 +517,7 @@ def memoria():
                     funciones.timer_active_3 = False
                     pygame.time.set_timer(funciones.timer_event_3, 0)
                     funciones.game_state = 'Thrd_level'
+                    funciones.timer_text_3 = funciones.timer_font_3.render("15", True, funciones.color_black)
 
             # Temporizador del tercero
             if event.type == funciones.start_timer_event_3 and funciones.game_state == 'Thrd_level': 
@@ -525,11 +530,13 @@ def memoria():
                     funciones.game_state = 'reflection_3'
                     funciones.used_time_3 = funciones.time_limit_3
                     funciones.unused_time_3 = 0
+                    funciones.start_timer_text_3 = funciones.timer_font.render("0", True, funciones.color_black)
 
                 if  funciones.aux_cronometro3: 
                     pygame.time.set_timer(funciones.start_timer_event_3, 0)
                     funciones.start_timer_active_3 = False
                     funciones.aux_cronometro3 = False
+                    funciones.start_timer_text_3 = funciones.timer_font.render("0", True, funciones.color_black)
 
             #-----------------Tiempos cuarto nivel-----------------------------
             # Cronometro del cuarto nivel
@@ -540,6 +547,7 @@ def memoria():
                     funciones.timer_active_4 = False
                     pygame.time.set_timer(funciones.timer_event_4, 0)
                     funciones.game_state = 'Frth_level'
+                    funciones.timer_text_4 = funciones.timer_font_4.render("15", True, funciones.color_black)
 
             # Temporizador del cuarto
             if event.type == funciones.start_timer_event_4 and funciones.game_state == 'Frth_level': 
@@ -552,11 +560,12 @@ def memoria():
                     funciones.game_state = 'reflection_4'
                     funciones.used_time_4 = funciones.time_limit_4
                     funciones.unused_time_4 = 0
-
+                    funciones.start_timer_text_4 = funciones.timer_font.render("0", True, funciones.color_black)
                 if  funciones.aux_cronometro4: 
                     pygame.time.set_timer(funciones.start_timer_event_4, 0)
                     funciones.start_timer_active_4 = False
                     funciones.aux_cronometro4 = False
+                    funciones.start_timer_text_4 = funciones.timer_font.render("0", True, funciones.color_black)
             #-----------------Tiempos quinto nivel-----------------------------
             # Cronometro del quinto nivel
             if event.type == funciones.timer_event_5 and funciones.game_state == 'fifth_level':
@@ -566,6 +575,8 @@ def memoria():
                     funciones.timer_active_5 = False
                     pygame.time.set_timer(funciones.timer_event_5, 0)
                     funciones.game_state = 'Ffth_level'
+                    funciones.timer_text_5 = funciones.timer_font_5.render("20", True, funciones.color_black)
+                    
 
             # Temporizador del quinto
             if event.type == funciones.start_timer_event_5 and funciones.game_state == 'Ffth_level': 
@@ -578,11 +589,13 @@ def memoria():
                     funciones.game_state = 'reflection_5'
                     funciones.used_time_5 = funciones.time_limit_5
                     funciones.unused_time_5 = 0
+                    funciones.start_timer_text_5 = funciones.timer_font.render("0", True, funciones.color_black)
 
                 if  funciones.aux_cronometro5: 
                     pygame.time.set_timer(funciones.start_timer_event_5, 0)
                     funciones.start_timer_active_5 = False
                     funciones.aux_cronometro5 = False
+                    funciones.start_timer_text_5 = funciones.timer_font.render("0", True, funciones.color_black)
             #-----------------Tiempos sexto nivel-----------------------------
             # Cronometro del sexto nivel
             if event.type == funciones.timer_event_6 and funciones.game_state == 'sixth_level':
@@ -592,6 +605,7 @@ def memoria():
                     funciones.timer_active_6 = False
                     pygame.time.set_timer(funciones.timer_event_6, 0)
                     funciones.game_state = 'Sxth_level'
+                    funciones.timer_text_6 = funciones.timer_font_6.render("20", True, funciones.color_black)
 
             # Temporizador del sexto
             if event.type == funciones.start_timer_event_6 and funciones.game_state == 'Sxth_level': 
@@ -604,11 +618,12 @@ def memoria():
                     funciones.game_state = 'reflection_6'
                     funciones.used_time_6 = funciones.time_limit_6
                     funciones.unused_time_6 = 0
-
+                    funciones.start_timer_text_6 = funciones.timer_font.render("0", True, funciones.color_black)
                 if  funciones.aux_cronometro6: 
                     pygame.time.set_timer(funciones.start_timer_event_6, 0)
                     funciones.start_timer_active_6 = False
                     funciones.aux_cronometro6 = False
+                    funciones.start_timer_text_6 = funciones.timer_font.render("0", True, funciones.color_black)
             #-----------------Tiempos septimo nivel-----------------------------
             # Cronometro del septimo nivel
             if event.type == funciones.timer_event_7 and funciones.game_state == 'seventh_level':
@@ -618,7 +633,7 @@ def memoria():
                     funciones.timer_active_7 = False
                     pygame.time.set_timer(funciones.timer_event_7, 0)
                     funciones.game_state = 'Svnth_level'
-
+                    funciones.timer_text_7 = funciones.timer_font_7.render("20", True, funciones.color_black)
             # Temporizador del septimo
             if event.type == funciones.start_timer_event_7 and funciones.game_state == 'Svnth_level': 
                 funciones.start_time_7 += 1 
@@ -630,11 +645,12 @@ def memoria():
                     funciones.game_state = 'reflection_7'
                     funciones.used_time_7 = funciones.time_limit_7
                     funciones.unused_time_7 = 0
-
+                    funciones.start_timer_text_7 = funciones.timer_font.render("0", True, funciones.color_black)
                 if  funciones.aux_cronometro7: 
                     pygame.time.set_timer(funciones.start_timer_event_7, 0)
                     funciones.start_timer_active_7 = False
                     funciones.aux_cronometro7 = False
+                    funciones.start_timer_text_7 = funciones.timer_font.render("0", True, funciones.color_black)
             #-----------------Tiempos octavo nivel-----------------------------
             # Cronometro del octavo nivel
             if event.type == funciones.timer_event_8 and funciones.game_state == 'eighth_level':
@@ -644,6 +660,7 @@ def memoria():
                     funciones.timer_active_8 = False
                     pygame.time.set_timer(funciones.timer_event_8, 0)
                     funciones.game_state = 'Eighth_level'
+                    funciones.timer_text_8 = funciones.timer_font_8.render("20", True, funciones.color_black)
 
             # Temporizador del octavo
             if event.type == funciones.start_timer_event_8 and funciones.game_state == 'Eighth_level': 
@@ -656,11 +673,13 @@ def memoria():
                     funciones.game_state = 'reflection_8'
                     funciones.used_time_8 = funciones.time_limit_8
                     funciones.unused_time_8 = 0
+                    funciones.start_timer_text_8 = funciones.timer_font.render("0", True, funciones.color_black)
 
                 if  funciones.aux_cronometro8: 
                     pygame.time.set_timer(funciones.start_timer_event_8, 0)
                     funciones.start_timer_active_8 = False
                     funciones.aux_cronometro8 = False
+                    funciones.start_timer_text_8 = funciones.timer_font.render("0", True, funciones.color_black)
             #-----------------Tiempos noveno nivel-----------------------------
             # Cronometro del noveno nivel
             if event.type == funciones.timer_event_9 and funciones.game_state == 'ninth_level':
@@ -670,6 +689,7 @@ def memoria():
                     funciones.timer_active_9 = False
                     pygame.time.set_timer(funciones.timer_event_9, 0)
                     funciones.game_state = 'Nnth_level'
+                    funciones.timer_text_9 = funciones.timer_font_9.render("20", True, funciones.color_black)
 
             # Temporizador del noveno
             if event.type == funciones.start_timer_event_9 and funciones.game_state == 'Nnth_level': 
@@ -682,11 +702,13 @@ def memoria():
                     funciones.game_state = 'reflection_9'
                     funciones.used_time_9 = funciones.time_limit_9
                     funciones.unused_time_9 = 0
+                    funciones.start_timer_text_9 = funciones.timer_font.render("0", True, funciones.color_black)
 
                 if  funciones.aux_cronometro9: 
                     pygame.time.set_timer(funciones.start_timer_event_9, 0)
                     funciones.start_timer_active_9 = False
                     funciones.aux_cronometro9 = False
+                    funciones.start_timer_text_9 = funciones.timer_font.render("0", True, funciones.color_black)
             #-----------------Tiempos decimo nivel-----------------------------
             # Cronometro del decimo nivel
             if event.type == funciones.timer_event_10 and funciones.game_state == 'tenth_level':
@@ -696,6 +718,7 @@ def memoria():
                     funciones.timer_active_10 = False
                     pygame.time.set_timer(funciones.timer_event_10, 0)
                     funciones.game_state = 'Tnth_level'
+                    funciones.timer_text_10 = funciones.timer_font_10.render("20", True, funciones.color_black)
 
             # Temporizador del decimo
             if event.type == funciones.start_timer_event_10 and funciones.game_state == 'Tnth_level': 
@@ -708,12 +731,13 @@ def memoria():
                     funciones.game_state = 'reflection_10'
                     funciones.used_time_10 = funciones.time_limit_10
                     funciones.unused_time_10 = 0
+                    funciones.start_timer_text_10 = funciones.timer_font.render("0", True, funciones.color_black)
 
                 if  funciones.aux_cronometro10: 
                     pygame.time.set_timer(funciones.start_timer_event_10, 0)
                     funciones.start_timer_active_10 = False
                     funciones.aux_cronometro10 = False
-
+                    funciones.start_timer_text_10 = funciones.timer_font.render("0", True, funciones.color_black)
             # Quit Game
             if event.type == pygame.QUIT: # Si el evento es .QUIT (Darle click en la X de la ventana generada) se deja de ejecutar el while
                 funciones.open_game = False
@@ -723,5 +747,4 @@ def memoria():
         funciones.resultados()
 
     funciones.reiniciar_variables()
-
     return funciones.LI
