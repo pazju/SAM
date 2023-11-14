@@ -26,7 +26,6 @@ LI = [[0,0,0,0],
       [0,0,0,0],
       [0,0,0,0]]
 
-
 # Colores
 # https://htmlcolorcodes.com/es/tabla-de-colores/
 color_red = (255,0,0)
@@ -190,37 +189,37 @@ timer_event_4 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - ID)
 timer_active_4 = False # Variable para controlar si el temporizador está o no activo
 # Temporizador  quinto nivel
 timer_font_5 = pygame.font.SysFont("freemono.ttf", 100)
-level_time_5 = 15 # 15s
+level_time_5 = 20 # 20s
 timer_text_5 = timer_font_5.render(str(level_time_5), True, color_black)
 timer_event_5 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - ID) 
 timer_active_5 = False # Variable para controlar si el temporizador está o no activo
 # Temporizador  Sexto nivel
 timer_font_6 = pygame.font.SysFont("freemono.ttf", 100)
-level_time_6 = 15 # 15s
+level_time_6 = 20 # 20s
 timer_text_6 = timer_font_6.render(str(level_time_6), True, color_black)
 timer_event_6 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - ID) 
 timer_active_6 = False # Variable para controlar si el temporizador está o no activo
 # Temporizador  Septimo nivel
 timer_font_7 = pygame.font.SysFont("freemono.ttf", 100)
-level_time_7 = 15 # 15s
+level_time_7 = 20 # 20s
 timer_text_7 = timer_font_7.render(str(level_time_7), True, color_black)
 timer_event_7 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - ID) 
 timer_active_7 = False # Variable para controlar si el temporizador está o no activo
 # Temporizador  Octavo nivel
 timer_font_8 = pygame.font.SysFont("freemono.ttf", 100)
-level_time_8 = 15 # 15s
+level_time_8 = 20 # 20s
 timer_text_8 = timer_font_8.render(str(level_time_8), True, color_black)
 timer_event_8 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - ID) 
 timer_active_8 = False # Variable para controlar si el temporizador está o no activo
 # Temporizador  Noveno nivel
 timer_font_9 = pygame.font.SysFont("freemono.ttf", 100)
-level_time_9 = 15 # 15s
+level_time_9 = 20 # 20s
 timer_text_9 = timer_font_2.render(str(level_time_9), True, color_black)
 timer_event_9 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - ID) 
 timer_active_9 = False # Variable para controlar si el temporizador está o no activo
 # Temporizador  Decimo nivel
 timer_font_10 = pygame.font.SysFont("freemono.ttf", 100)
-level_time_10 = 15 # 15s
+level_time_10 = 20 # 20s
 timer_text_10 = timer_font_2.render(str(level_time_10), True, color_black)
 timer_event_10 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - ID) 
 timer_active_10 = False # Variable para controlar si el temporizador está o no activo
@@ -232,7 +231,7 @@ start_timer_event = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 - I
 start_timer_active = False # Variable para controlar si el temporizador está o no activo
 used_time_1 = 0
 unused_time_1 = 0
-time_limit_1 = 60
+time_limit_1 = 240
 
 # Cronometro segundo nivel
 start_time_2 = 0 #0s
@@ -250,7 +249,7 @@ start_timer_event_3 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_3 = False # Variable para controlar si el temporizador está o no activo
 used_time_3 = 0
 unused_time_3 = 0
-time_limit_3 = 120
+time_limit_3 = 60
 
 # Cronometro cuarto nivel
 start_time_4 = 0 #0s
@@ -259,7 +258,7 @@ start_timer_event_4 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_4 = False # Variable para controlar si el temporizador está o no activo
 used_time_4 = 0
 unused_time_4 = 0
-time_limit_4 = 120
+time_limit_4 = 60
 
 # Cronometro quinto nivel
 start_time_5 = 0 #0s
@@ -295,7 +294,7 @@ start_timer_event_8 = pygame.USEREVENT+1 # Evento de Usuario + 1 (USEREVENT 25 -
 start_timer_active_8 = False # Variable para controlar si el temporizador está o no activo
 used_time_8 = 0
 unused_time_8 = 0
-time_limit_8 = 240
+time_limit_8 = 120
 
 # Cronometro noveno nivel
 start_time_9 = 0 #0s
@@ -335,9 +334,10 @@ audio_tar1 = 1
 audio_qp = 1
 audio_qp2 = 1
 audio_ind = 1
+audio_tablero = 1
+audio_resultados = 1
 
-# Variable audios taretas
-#Primer nivel
+# Variable audios tarjetas
 s_primero = 1
 s_segundo = 1
 s_wrong2_1 = 1
@@ -645,6 +645,8 @@ sonido_fracaso = pygame.mixer.Sound("F_LEVEL/equivocado.mp3")
 sonido_voltear = pygame.mixer.Sound("F_LEVEL/voltear.mp3")
 sonido_intro = pygame.mixer.Sound("F_LEVEL/intro.mp3")
 sonido_instruc = pygame.mixer.Sound("F_LEVEL/instruc.mp3")
+sonido_resultados = pygame.mixer.Sound("F_LEVEL/resultados.mp3")
+sonido_resultados1 = pygame.mixer.Sound("F_LEVEL/resultados1.mp3")
 tar_1 = pygame.mixer.Sound("F_LEVEL/tar_1.mp3")
 #Tutoriales
 cont_rut = pygame.mixer.Sound("Edicion/Audios/cont_rutina.mp3")
@@ -654,6 +656,7 @@ q_protesis2 = pygame.mixer.Sound("Edicion/Audios/q_protesis2.mp3")
 protesis_1 = pygame.mixer.Sound("Edicion/Audios/1_protesis.mp3")
 protesis_2 = pygame.mixer.Sound("Edicion/Audios/2_protesis_colocar.mp3")
 sel_personaje = pygame.mixer.Sound("Edicion/Audios/sel_personaje.mp3")
+ver_tablero = pygame.mixer.Sound("Edicion/Audios/tiempo_memorizar.mp3")
 exp1 = pygame.mixer.Sound("Edicion/Audios/insumos.mp3")
 exp2 = pygame.mixer.Sound("Edicion/Audios/1_enjuagar_agua.mp3")
 exp3 = pygame.mixer.Sound("Edicion/Audios/2_sujetar_hilo.mp3")
@@ -1027,22 +1030,26 @@ def q_nivel_prueba():
     if audio_qp == 1:
         channel.queue(audio_instruc)
         audio_qp = 0
+
     if yes == True: # Tecla n oprimida
         game_state = 'video_protesis1'
         yes = False
         yes_no_question = False
+        channel.stop()
         audio_qp =1 
 
     if no == True: # Tecla b oprimida
         game_state = 'video_enjuague_agua'  
         no = False  
         yes_no_question = False
+        channel.stop()
         audio_qp = 1
     
     if back_window == True:
         game_state = 'intro'
         back_window = False
         yes_no_question = False
+        channel.stop()
         audio_qp = 1
 
     return yes, no, yes_no_question, isGame, paused_game, back_window
@@ -1129,7 +1136,13 @@ def personaje():
 
     if s1 == True:
         sam = 1
+        samuel = 0
+        samantha = 0
+        sami = 0
         s1 = False
+        s2 = False
+        s3 = False
+        s4 = False
         name = sam_name
         if audio_persona == 1:
             channel.queue(name)
@@ -1137,20 +1150,38 @@ def personaje():
 
     if s2 == True:
         samuel = 1
+        sam = 0
+        samantha = 0
+        sami = 0
+        s1 = False
         s2 = False
+        s3 = False
+        s4 = False
         name = samuel_name
         if audio_persona == 1:
             channel.queue(name)
             audio_persona = 0
     if s3 == True:
         samantha = 1
+        sam = 0
+        samuel = 0
+        sami = 0
+        s1 = False
+        s2 = False
         s3 = False
+        s4 = False
         name = samantha_name
         if audio_persona == 1:
             channel.queue(name)
             audio_persona = 0
     if s4 == True:
         sami = 1
+        sam = 0
+        samuel = 0
+        samantha = 0
+        s1 = False
+        s2 = False
+        s3 = False
         s4 = False
         name = sami_name
         if audio_persona == 1:
@@ -1199,7 +1230,7 @@ def video_sostener_hilo():
     isGame = False
     pygame.display.set_caption('Tutorial') # Caption - Nombre de la ventana
     instruc = 'VIDEOS/exp5.mp4'
-    vel = 25
+    vel = 30
     channel= pygame.mixer.Channel(1)
     audio_tut1 = pygame.mixer.Sound(exp3)
     channel.queue(audio_tut1)
@@ -1215,7 +1246,7 @@ def video_mover_hilo():
     isGame = False
     pygame.display.set_caption('Tutorial') # Caption - Nombre de la ventana
     instruc = 'VIDEOS/exp4.mp4'
-    vel = 20
+    vel = 25
     channel= pygame.mixer.Channel(1)
     audio_tut1 = pygame.mixer.Sound(exp4)
     channel.queue(audio_tut1)
@@ -1329,12 +1360,14 @@ def exp_protesis2():
         game_state = 'exp_prot2'
         yes = False
         yes_no_question = False
+        channel.stop()
         audio_qp2 =1 
 
     if no == True: # Tecla b oprimida
         game_state = 'first_level_card'  
         no = False  
         yes_no_question = False
+        channel.stop()
         audio_qp2 = 1
 
     return yes, no, yes_no_question, isGame, paused_game, back_window
@@ -1495,11 +1528,17 @@ def first_level():  # Primer nivel
     global timer_text, level_time, timer_active
     global puede_jugar, reinicio, ganar1
     global start_timer_active, aux_cronometro
-    global x1, x2, y1, y2, ganar_rein1, acierto_1, error_1, unused_time_1, used_time_1, tar_1, audio_tar1
+    global x1, x2, y1, y2, ganar_rein1, acierto_1, error_1, unused_time_1, used_time_1, tar_1, audio_tablero
     pygame.display.set_caption('first_level') # Caption - Nombre de la ventana
     pygame.display.update()
     screen.fill(color_azul_claro) 
-
+    #########################################################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    #########################################################
     aux_cronometro = True
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
     paused_game = False
@@ -1742,6 +1781,7 @@ def completed_1():
     global ganar1
     #global aux_cronometro
     global acierto_1, error_1, unused_time_1, used_time_1, ganar_rein1
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 1') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -1750,6 +1790,11 @@ def completed_1():
     used_time_text = font.render( str(used_time_1), True, color_black)
     unused_time_text = font.render(str(unused_time_1), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
     
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
@@ -1773,15 +1818,21 @@ def completed_1():
         unused_time_1 = 0
         used_time_1 = 0
         ganar_rein1 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'juego_fin'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         back_window = False  
         open_game = False
         ganar_rein1 +=1
+        channel.stop()
+        audio_resultados = 1
 
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -1811,6 +1862,7 @@ def uncompleted_1():
     global ganar1, ganar_rein1
     global aux_cronometro
     global acierto_1, error_1, unused_time_1, used_time_1, start_time
+    global audio_resultados
     
     pygame.display.set_caption('No completo nivel 1') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados1, (0,0)) # Función que dibuja el fondo
@@ -1821,6 +1873,12 @@ def uncompleted_1():
     used_time_text = font.render(str(used_time_1), True, color_black)
     unused_time_text = font.render(str(unused_time_1), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados1)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -1843,7 +1901,9 @@ def uncompleted_1():
         error_1 = 0
         unused_time_1 = 0
         used_time_1 = 0
-        ganar_rein1 +=1##########################
+        ganar_rein1 = 0#######################################################
+        channel.stop()
+        audio_resultados = 1
 
     '''if next_window == True: # Tecla n oprimida
         game_state = 'secondcard'
@@ -1871,9 +1931,13 @@ def level_card(actual_state):
     global next_window
     global back_window
     global reinicio
+    global audio_tablero
     #Funcion para definir la tarjeta según el nivel
     pygame.display.update()
     back_window =  False
+    ########
+    audio_tablero = 1    
+
     image_path = level_images[actual_state]
     image = pygame.transform.scale(pygame.image.load(image_path).convert_alpha(), (screen_height, screen_height))
     audio_path = level_audios[actual_state]
@@ -1941,7 +2005,7 @@ def level_card(actual_state):
     
     isGame = False # False porque no se encuentra dentro de un juego    
     
-    return game_state, paused_game, isGame, open_game, next_window, back_window, reinicio, actual_state
+    return game_state, paused_game, isGame, open_game, next_window, back_window, reinicio, actual_state, audio_tablero
     
 
 ###################################  Segundo Nivel #####################################
@@ -1992,7 +2056,7 @@ def iniciar_juego2():
 
 # Función para dibujar los cepillos en la pantalla
 def draw_points(cepillos):
-    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto1.png"), (100, 100))
+    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto3.png"), (100, 100))
     cepillo_width, cepillo_height = cepillo_image.get_size()
     x_offset = (screen_width*0.16032)  # Ajusta la posición x donde quieres que aparezcan los cepillos
 
@@ -2011,7 +2075,7 @@ def second_level():
     global puede_jugar_2, reinicio, ganar2, perder2
     global acierto_2, error_2, used_time_2, unused_time_2 
     global x1_2, y1_2
-    global actual_matrix, ganar_reinicio2, cepillos2
+    global actual_matrix, ganar_reinicio2, cepillos2, audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_rosado)
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -2024,6 +2088,13 @@ def second_level():
     unused_time_2 = 0
     used_time_2 = 0
     cepillos2 = 3
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio2 == 0:
             x1_2 = None
             y1_2 = None
@@ -2259,9 +2330,9 @@ def completed_2():
     global reinicio
     global puede_jugar_2
     global ganar2, perder2, x1_2,y1_2
-    #global aux_cronometro
     global acierto_2, error_2, unused_time_2, used_time_2
     global ganar_reinicio2
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 2') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -2270,6 +2341,13 @@ def completed_2():
     used_time_text = font.render( str(used_time_2), True, color_black)
     unused_time_text = font.render(str(unused_time_2), True, color_black)
     
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+    ######################
     
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
@@ -2296,12 +2374,15 @@ def completed_2():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio2 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_sostener_hilo'
         next_window = False
         ganar_reinicio2 +=1
-        
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -2309,6 +2390,8 @@ def completed_2():
         back_window = False
         open_game = False
         ganar_reinicio2 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -2343,6 +2426,7 @@ def uncompleted_2():
     global aux_cronometro2
     global acierto_2, error_2, unused_time_2, used_time_2, start_time_2, x1_2, y1_2
     global ganar_reinicio2
+    global audio_resultados
     
     pygame.display.set_caption('No completo nivel 2') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -2352,7 +2436,13 @@ def uncompleted_2():
     mistake_text = font.render(str(error_2), True, color_black)
     used_time_text = font.render(str(used_time_2), True, color_black)
     unused_time_text = font.render(str(unused_time_2), True, color_black)
-    
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+    ######################
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -2377,18 +2467,24 @@ def uncompleted_2():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio2 = 0
+        channel.stop()
+        audio_resultados = 1
 
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_sostener_hilo'
         next_window = False
         ganar_reinicio2 = 0
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         paused_game = False 
         back_window = False
         open_game = False
         ganar_reinicio2 = 0
+        channel.stop()
+        audio_resultados = 1
          
     
     isGame = False # False porque no se encuentra dentro de un juego    
@@ -2444,7 +2540,7 @@ def iniciar_juego3():
 
 # Función para dibujar los cepillos en la pantalla
 def draw_points2(cepillos):
-    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto1.png"), (100, 100))
+    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto2.png"), (100, 100))
     cepillo_width, cepillo_height = cepillo_image.get_size()
     x_offset = 10 # Ajusta la posición x donde quieres que aparezcan los cepillos
 
@@ -2464,6 +2560,7 @@ def third_level():
     global acierto_3, error_3, used_time_3, unused_time_3 
     global x1_3, y1_3
     global actual_matrix, ganar_reinicio3, cepillos3
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_rosado)
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -2476,6 +2573,13 @@ def third_level():
     unused_time_3 = 0
     used_time_3 = 0
     cepillos3 = 3
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio3 == 0:
             x1_3 = None
             y1_3 = None
@@ -2717,6 +2821,7 @@ def completed_3():
     #global aux_cronometro
     global acierto_3, error_3, unused_time_3, used_time_3
     global ganar_reinicio3
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 3') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -2724,7 +2829,13 @@ def completed_3():
     mistake_text = font.render(str(error_3), True, color_black)
     used_time_text = font.render( str(used_time_3), True, color_black)
     unused_time_text = font.render(str(unused_time_3), True, color_black)
-    
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+    ######################
     
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
@@ -2751,11 +2862,15 @@ def completed_3():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio3 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_mover_hilo'
         next_window = False
         ganar_reinicio3 +=1
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -2763,6 +2878,8 @@ def completed_3():
         back_window = False
         open_game = False
         ganar_reinicio3 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -2797,6 +2914,7 @@ def uncompleted_3():
     global aux_cronometro3
     global acierto_3, error_3, unused_time_3, used_time_3, start_time_3, x1_3, y1_3
     global ganar_reinicio3
+    global audio_resultados
     
     pygame.display.set_caption('No completo nivel 3') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -2807,6 +2925,12 @@ def uncompleted_3():
     used_time_text = font.render(str(used_time_3), True, color_black)
     unused_time_text = font.render(str(unused_time_3), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -2829,12 +2953,16 @@ def uncompleted_3():
         unused_time_3 = 0
         used_time_3 = 0
         ganar_reinicio3 = 0
+        channel.stop()
+        audio_resultados = 1
 
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_mover_hilo'
         next_window = False
         ganar_reinicio3 = 0
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -2842,6 +2970,8 @@ def uncompleted_3():
         back_window = False
         open_game = False
         ganar_reinicio3 = 0
+        channel.stop()
+        audio_resultados = 1
          
     
     isGame = False # False porque no se encuentra dentro de un juego    
@@ -2920,6 +3050,7 @@ def fourth_level():
     global acierto_4, error_4, used_time_4, unused_time_4 
     global x1_4, y1_4
     global actual_matrix, ganar_reinicio4, cepillos4
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_azul_claro) 
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -2932,6 +3063,13 @@ def fourth_level():
     unused_time_4 = 0
     used_time_4 = 0
     cepillos4 = 3
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio4 == 0:
             x1_4 = None
             y1_4 = None
@@ -3175,9 +3313,9 @@ def completed_4():
     global reinicio
     global puede_jugar_4
     global ganar4, perder4, x1_4,y1_4
-    #global aux_cronometro
     global acierto_4, error_4, unused_time_4, used_time_4
     global ganar_reinicio4
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 4') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -3185,8 +3323,13 @@ def completed_4():
     mistake_text = font.render(str(error_4), True, color_black)
     used_time_text = font.render( str(used_time_4), True, color_black)
     unused_time_text = font.render(str(unused_time_4), True, color_black)
-    
-    
+   
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+  
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -3212,10 +3355,14 @@ def completed_4():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio4 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'fifthcard'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
         
         
 
@@ -3224,6 +3371,8 @@ def completed_4():
         back_window = False
         open_game = False
         ganar_reinicio4 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -3258,7 +3407,7 @@ def uncompleted_4():
     global aux_cronometro4
     global acierto_4, error_4, unused_time_4, used_time_4, start_time_4, x1_4, y1_4
     global ganar_reinicio4
-    
+    global audio_resultados
     pygame.display.set_caption('No completo nivel 4') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
     
@@ -3268,6 +3417,12 @@ def uncompleted_4():
     used_time_text = font.render(str(used_time_4), True, color_black)
     unused_time_text = font.render(str(unused_time_4), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -3290,19 +3445,22 @@ def uncompleted_4():
         unused_time_4 = 0
         used_time_4 = 0
         ganar_reinicio4 = 0
-
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'fifthcard'
         next_window = False
-        
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         paused_game = False 
         back_window = False
         open_game = False
         ganar_reinicio4 = 0
-         
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -3358,7 +3516,7 @@ def iniciar_juego5():
 
 # Función para dibujar los cepillos en la pantalla
 def draw_points4(cepillos):
-    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto1.png"), (100, 100))
+    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto3.png"), (100, 100))
     cepillo_width, cepillo_height = cepillo_image.get_size()
     x_offset = 10  # Ajusta la posición x donde quieres que aparezcan los cepillos
 
@@ -3378,6 +3536,7 @@ def fifth_level():
     global acierto_5, error_5, used_time_5, unused_time_5
     global x1_5, y1_5
     global actual_matrix, ganar_reinicio5, cepillos5
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_rosado) 
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -3390,7 +3549,13 @@ def fifth_level():
     unused_time_5 = 0
     used_time_5 = 0
     cepillos5 = 3
-
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio5 == 0:
             x1_5 = None
             y1_5 = None
@@ -3420,7 +3585,7 @@ def fifth_level():
             screen.blit(timer_text_5, timer_rect_5) 
     
     if not timer_active_5 and game_state == 'fifth_level':
-        level_time_5 = 15
+        level_time_5 = 20 # 20s
         pygame.time.set_timer(timer_event_5, 1000) # set_timer crea una acción cada 1s
         timer_active_5 = True
 
@@ -3635,9 +3800,9 @@ def completed_5():
     global reinicio
     global puede_jugar_5
     global ganar5, perder5, x1_5,y1_5
-    #global aux_cronometro
     global acierto_5, error_5, unused_time_5, used_time_5
     global ganar_reinicio5
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 5') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -3646,7 +3811,12 @@ def completed_5():
     used_time_text = font.render( str(used_time_5), True, color_black)
     unused_time_text = font.render(str(unused_time_5), True, color_black)
     
-    
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -3672,11 +3842,15 @@ def completed_5():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio5 +=1
+        channel.stop()
+        audio_resultados = 1
+
 
     if next_window == True: # Tecla n oprimida
         game_state = 'sixthcard'
         next_window = False
-        
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -3684,6 +3858,8 @@ def completed_5():
         back_window = False
         open_game = False
         ganar_reinicio5 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -3719,6 +3895,7 @@ def uncompleted_5():
     global aux_cronometro5
     global acierto_5, error_5, unused_time_5, used_time_5, start_time_5, x1_5, y1_5
     global ganar_reinicio5
+    global audio_resultados
     
     pygame.display.set_caption('No completo nivel 5') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -3729,6 +3906,12 @@ def uncompleted_5():
     used_time_text = font.render(str(used_time_5), True, color_black)
     unused_time_text = font.render(str(unused_time_5), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -3751,17 +3934,23 @@ def uncompleted_5():
         unused_time_5 = 0
         used_time_5 = 0
         ganar_reinicio5 = 0
+        channel.stop()
+        audio_resultados = 1
 
 
     if next_window == True: # Tecla n oprimida
         game_state = 'sixthcard'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         paused_game = False 
         back_window = False
         open_game = False
         ganar_reinicio5 = 0
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -3838,8 +4027,9 @@ def sixth_level():
     global acierto_6, error_6, used_time_6, unused_time_6
     global x1_6, y1_6
     global actual_matrix, ganar_reinicio6, cepillos6
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
-    screen.fill(color_amarillo) 
+    screen.fill(color_rosado) 
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
     paused_game = False
     puede_jugar_6 = True
@@ -3850,6 +4040,15 @@ def sixth_level():
     unused_time_6 = 0
     used_time_6 = 0
     cepillos6 = 3
+
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
+
     if not ganar_reinicio6 == 0:
             x1_6 = None
             y1_6 = None
@@ -3879,7 +4078,7 @@ def sixth_level():
             screen.blit(timer_text_6, timer_rect_6) 
     
     if not timer_active_6 and game_state == 'sixth_level':
-        level_time_6 = 15
+        level_time_6 = 20 # 20s
         pygame.time.set_timer(timer_event_6, 1000) # set_timer crea una acción cada 1s
         timer_active_6 = True
 
@@ -3949,7 +4148,7 @@ def Sxth_level():
 
 
     # Hacer toda la pantalla blanca
-    screen.fill(color_amarillo)
+    screen.fill(color_rosado)
     # Banderas para saber en dónde dibujar las imágenes
     cuadros_rows = len(cuadros6)
     cuadros_cols = len(cuadros6[0])
@@ -4103,6 +4302,7 @@ def completed_6():
     #global aux_cronometro
     global acierto_6, error_6, unused_time_6, used_time_6
     global ganar_reinicio6
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 6') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -4111,7 +4311,12 @@ def completed_6():
     used_time_text = font.render( str(used_time_6), True, color_black)
     unused_time_text = font.render(str(unused_time_6), True, color_black)
     
-    
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -4137,10 +4342,14 @@ def completed_6():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio6 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_ubicar_cepillo'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
         
         
 
@@ -4149,6 +4358,8 @@ def completed_6():
         back_window = False
         open_game = False
         ganar_reinicio6 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -4184,6 +4395,7 @@ def uncompleted_6():
     global aux_cronometro6
     global acierto_6, error_6, unused_time_6, used_time_6, start_time_6, x1_6, y1_6
     global ganar_reinicio6
+    global audio_resultados
     
     pygame.display.set_caption('No completo nivel 6') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -4194,6 +4406,12 @@ def uncompleted_6():
     used_time_text = font.render(str(used_time_6), True, color_black)
     unused_time_text = font.render(str(unused_time_6), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -4216,17 +4434,23 @@ def uncompleted_6():
         unused_time_6 = 0
         used_time_6 = 0
         ganar_reinicio6 = 0
+        channel.stop()
+        audio_resultados = 1
 
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_ubicar_cepillo'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         paused_game = False 
         back_window = False
         open_game = False
         ganar_reinicio6 = 0
+        channel.stop()
+        audio_resultados = 1
          
     
     isGame = False # False porque no se encuentra dentro de un juego    
@@ -4283,7 +4507,7 @@ def iniciar_juego7():
 
 # Función para dibujar los cepillos en la pantalla
 def draw_points6(cepillos):
-    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto1.png"), (100, 100))
+    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto2.png"), (100, 100))
     cepillo_width, cepillo_height = cepillo_image.get_size()
     x_offset = 10  # Ajusta la posición x donde quieres que aparezcan los cepillos
 
@@ -4303,6 +4527,7 @@ def seventh_level():
     global acierto_7, error_7, used_time_7, unused_time_7
     global x1_7, y1_7
     global actual_matrix, ganar_reinicio7, cepillos7
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_azul_claro) 
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -4315,6 +4540,13 @@ def seventh_level():
     unused_time_7 = 0
     used_time_7 = 0
     cepillos7 = 3
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio7 == 0:
             x1_7 = None
             y1_7 = None
@@ -4344,7 +4576,7 @@ def seventh_level():
             screen.blit(timer_text_7, timer_rect_7) 
     
     if not timer_active_7 and game_state == 'seventh_level':
-        level_time_7 = 15
+        level_time_7 = 20 # 20s
         pygame.time.set_timer(timer_event_7, 1000) # set_timer crea una acción cada 1s
         timer_active_7 = True
 
@@ -4562,6 +4794,7 @@ def completed_7():
     #global aux_cronometro
     global acierto_7, error_7, unused_time_7, used_time_7
     global ganar_reinicio7
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 7') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -4570,6 +4803,11 @@ def completed_7():
     used_time_text = font.render( str(used_time_7), True, color_black)
     unused_time_text = font.render(str(unused_time_7), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
     
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
@@ -4596,10 +4834,14 @@ def completed_7():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio7 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_cepillar_circulos'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -4607,6 +4849,8 @@ def completed_7():
         back_window = False
         open_game = False
         ganar_reinicio7 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -4642,7 +4886,8 @@ def uncompleted_7():
     global aux_cronometro7
     global acierto_7, error_7, unused_time_7, used_time_7, start_time_7, x1_7, y1_7
     global ganar_reinicio7
-    
+    global audio_resultados
+
     pygame.display.set_caption('No completo nivel 7') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
     
@@ -4652,6 +4897,12 @@ def uncompleted_7():
     used_time_text = font.render(str(used_time_7), True, color_black)
     unused_time_text = font.render(str(unused_time_7), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -4674,11 +4925,15 @@ def uncompleted_7():
         unused_time_7 = 0
         used_time_7 = 0
         ganar_reinicio7 = 0
+        channel.stop()
+        audio_resultados = 1
 
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_cepillar_circulos'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -4686,7 +4941,8 @@ def uncompleted_7():
         back_window = False
         open_game = False
         ganar_reinicio7 = 0
-         
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -4742,7 +4998,7 @@ def iniciar_juego8():
 
 # Función para dibujar los cepillos en la pantalla
 def draw_points7(cepillos):
-    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto1.png"), (100, 100))
+    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto3.png"), (100, 100))
     cepillo_width, cepillo_height = cepillo_image.get_size()
     x_offset = 10  # Ajusta la posición x donde quieres que aparezcan los cepillos
 
@@ -4762,6 +5018,7 @@ def eighth_level():
     global acierto_8, error_8, used_time_8, unused_time_8
     global x1_8, y1_8
     global actual_matrix, ganar_reinicio8, cepillos8
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_white) 
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -4774,6 +5031,13 @@ def eighth_level():
     unused_time_8 = 0
     used_time_8 = 0
     cepillos8 = 3
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio8 == 0:
             x1_8 = None
             y1_8 = None
@@ -4803,7 +5067,7 @@ def eighth_level():
             screen.blit(timer_text_8, timer_rect_8) 
     
     if not timer_active_8 and game_state == 'eighth_level':
-        level_time_8 = 15
+        level_time_8 = 20 # 20s
         pygame.time.set_timer(timer_event_8, 1000) # set_timer crea una acción cada 1s
         timer_active_8 = True
 
@@ -5032,6 +5296,7 @@ def completed_8():
     #global aux_cronometro
     global acierto_8, error_8, unused_time_8, used_time_8
     global ganar_reinicio8
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 8') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -5040,7 +5305,12 @@ def completed_8():
     used_time_text = font.render( str(used_time_8), True, color_black)
     unused_time_text = font.render(str(unused_time_8), True, color_black)
     
-    
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -5066,10 +5336,14 @@ def completed_8():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio8 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'ninthcard'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -5077,6 +5351,8 @@ def completed_8():
         back_window = False
         open_game = False
         ganar_reinicio8 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -5112,6 +5388,7 @@ def uncompleted_8():
     global aux_cronometro8
     global acierto_8, error_8, unused_time_8, used_time_8, start_time_8, x1_8, y1_8
     global ganar_reinicio8
+    global audio_resultados
     
     pygame.display.set_caption('No completo nivel 8') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -5122,6 +5399,12 @@ def uncompleted_8():
     used_time_text = font.render(str(used_time_8), True, color_black)
     unused_time_text = font.render(str(unused_time_8), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -5144,17 +5427,23 @@ def uncompleted_8():
         unused_time_8 = 0
         used_time_8 = 0
         ganar_reinicio8 = 0
+        channel.stop()
+        audio_resultados = 1
 
 
     if next_window == True: # Tecla n oprimida
         game_state = 'ninthcard'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         paused_game = False 
         back_window = False
         open_game = False
         ganar_reinicio8 = 0
+        channel.stop()
+        audio_resultados = 1
          
     
     isGame = False # False porque no se encuentra dentro de un juego    
@@ -5232,6 +5521,7 @@ def ninth_level():
     global acierto_9, error_9, used_time_9, unused_time_9
     global x1_9, y1_9
     global actual_matrix, ganar_reinicio9, cepillos9
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_azul_claro) 
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -5244,6 +5534,13 @@ def ninth_level():
     unused_time_9 = 0
     used_time_9 = 0
     cepillos9 = 3
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio9 == 0:
             x1_9 = None
             y1_9 = None
@@ -5273,7 +5570,7 @@ def ninth_level():
             screen.blit(timer_text_9, timer_rect_9)
     
     if not timer_active_9 and game_state == 'ninth_level':
-        level_time_9 = 15
+        level_time_9 = 20 # 20s
         pygame.time.set_timer(timer_event_9, 1000) # set_timer crea una acción cada 1s
         timer_active_9 = True
 
@@ -5496,6 +5793,7 @@ def completed_9():
     #global aux_cronometro
     global acierto_9, error_9, unused_time_9, used_time_9
     global ganar_reinicio9
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 9') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -5504,7 +5802,12 @@ def completed_9():
     used_time_text = font.render( str(used_time_9), True, color_black)
     unused_time_text = font.render(str(unused_time_9), True, color_black)
     
-    
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -5530,17 +5833,22 @@ def completed_9():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio9 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_enjuague_crema'
         next_window = False
-        
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         paused_game = False 
         back_window = False
         open_game = False
         ganar_reinicio9 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -5576,6 +5884,7 @@ def uncompleted_9():
     global aux_cronometro9
     global acierto_9, error_9, unused_time_9, used_time_9, start_time_9, x1_9, y1_9
     global ganar_reinicio9
+    global audio_resultados
     
     pygame.display.set_caption('No completo nivel 9') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -5586,6 +5895,12 @@ def uncompleted_9():
     used_time_text = font.render(str(used_time_9), True, color_black)
     unused_time_text = font.render(str(unused_time_9), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -5608,16 +5923,21 @@ def uncompleted_9():
         unused_time_9 = 0
         used_time_9 = 0
         ganar_reinicio9 = 0
-
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_enjuague_crema'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
 
     if back_window == True: # Tecla b oprimida
         paused_game = False 
         back_window = False
         open_game = False
+        channel.stop()
+        audio_resultados = 1
          
     
     isGame = False # False porque no se encuentra dentro de un juego    
@@ -5675,7 +5995,7 @@ def iniciar_juego10():
 
 # Función para dibujar los cepillos en la pantalla
 def draw_points9(cepillos):
-    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto1.png"), (100, 100))
+    cepillo_image = pygame.transform.scale(pygame.image.load("puntos/punto2.png"), (100, 100))
     cepillo_width, cepillo_height = cepillo_image.get_size()
     x_offset = 10  # Ajusta la posición x donde quieres que aparezcan los cepillos
 
@@ -5695,6 +6015,7 @@ def tenth_level():
     global acierto_10, error_10, used_time_10, unused_time_10
     global x1_10, y1_10
     global actual_matrix, ganar_reinicio10, cepillos10
+    global audio_tablero
     pygame.display.set_caption('_') # Caption - Nombre de la ventana
     screen.fill(color_azul_claro) 
     isGame = False # Bandera que indica estado de juego activo, lo que implica que se puede pausar o no
@@ -5707,6 +6028,13 @@ def tenth_level():
     unused_time_10 = 0
     used_time_10 = 0
     cepillos10 = 3
+    ######################
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(ver_tablero)
+    if audio_tablero == 1:
+        channel.queue(audio_instruc)
+        audio_tablero = 0
+    ######################
     if not ganar_reinicio10 == 0:
             x1_10 = None
             y1_10 = None
@@ -5736,7 +6064,7 @@ def tenth_level():
             screen.blit(timer_text_10, timer_rect_10)
     
     if not timer_active_10 and game_state == 'tenth_level':
-        level_time_10 = 15
+        level_time_10 = 20 # 20s
         pygame.time.set_timer(timer_event_10, 1000) # set_timer crea una acción cada 1s
         timer_active_10 = True
 
@@ -5945,7 +6273,7 @@ def recompensa_10():
     isGame = False
     pygame.display.set_caption('Ganador10') # Caption - Nombre de la ventana
     instruc = 'VIDEOS/ganar_9.mp4'
-    vel = 20
+    vel = 25
     pygame.mixer.Sound.play(completed)
     reproducir_video(instruc,vel)
     game_state = 'completed_10'
@@ -5964,6 +6292,7 @@ def completed_10():
     #global aux_cronometro
     global acierto_10, error_10, unused_time_10, used_time_10
     global ganar_reinicio10
+    global audio_resultados
     
     pygame.display.set_caption('Completo nivel 10') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
@@ -5972,6 +6301,11 @@ def completed_10():
     used_time_text = font.render( str(used_time_10), True, color_black)
     unused_time_text = font.render(str(unused_time_10), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
     
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
@@ -5998,10 +6332,14 @@ def completed_10():
         #x1_2 = None
         #y1_2 = None
         ganar_reinicio10 +=1
+        channel.stop()
+        audio_resultados = 1
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_enjuague_bucal'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -6009,6 +6347,8 @@ def completed_10():
         back_window = False
         open_game = False
         ganar_reinicio10 +=1
+        channel.stop()
+        audio_resultados = 1
     
     isGame = False # False porque no se encuentra dentro de un juego    
 
@@ -6044,7 +6384,7 @@ def uncompleted_10():
     global aux_cronometro10
     global acierto_10, error_10, unused_time_10, used_time_10, start_time_10, x1_10, y1_10
     global ganar_reinicio10
-    
+    global audio_resultados
     pygame.display.set_caption('No completo nivel 10') # Caption - Nombre de la ventana
     screen.blit(fondo_resultados, (0,0)) # Función que dibuja el fondo
     
@@ -6054,6 +6394,12 @@ def uncompleted_10():
     used_time_text = font.render(str(used_time_10), True, color_black)
     unused_time_text = font.render(str(unused_time_10), True, color_black)
     
+    channel= pygame.mixer.Channel(1)
+    audio_instruc = pygame.mixer.Sound(sonido_resultados)
+    if audio_resultados == 1:
+        channel.queue(audio_instruc)
+        audio_resultados = 0
+
     screen.blit(correct_text, ((screen_width//1.91), (screen_height//3.55)))
     screen.blit(mistake_text, ((screen_width//1.993), (screen_height//2.59)))
     screen.blit(used_time_text, ((screen_width//1.597), (screen_height//2.077)))
@@ -6076,11 +6422,15 @@ def uncompleted_10():
         unused_time_10 = 0
         used_time_10 = 0
         ganar_reinicio10 = 0
+        channel.stop()
+        audio_resultados = 1
 
 
     if next_window == True: # Tecla n oprimida
         game_state = 'video_enjuague_bucal'
         next_window = False
+        channel.stop()
+        audio_resultados = 1
         
 
     if back_window == True: # Tecla b oprimida
@@ -6088,6 +6438,8 @@ def uncompleted_10():
         back_window = False
         open_game = False
         ganar_reinicio10 = 0
+        channel.stop()
+        audio_resultados = 1
          
     
     isGame = False # False porque no se encuentra dentro de un juego    
