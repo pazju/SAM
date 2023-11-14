@@ -1,4 +1,5 @@
 
+
 import cv2
 import pygame
 import sys
@@ -10,6 +11,7 @@ import os
 #pygame.init()
 # Inicio para reproduccion de sonidos
 def secuencia_logica():
+    
     pygame.mixer.init()
 
     size = int (height/10)
@@ -379,7 +381,7 @@ def secuencia_logica():
                 channel.queue(sL0_1)
                 
                 ruta = 'FONDOS/Intro_juego_secuencia.mp4'
-                velocidad = 24
+                velocidad = 20
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
                 pygame.display.update()
@@ -401,7 +403,7 @@ def secuencia_logica():
             pygame.display.update()
             channel.queue(sL0_2)
             ruta = 'FONDOS/Instrucciones_1.mp4'
-            velocidad = 25
+            velocidad = 20
             rv.reproducir_video(ruta, width, height, velocidad)
             introduccion = False
             nivel_prueba = True
@@ -440,7 +442,7 @@ def secuencia_logica():
                 tiempo_activo = False
                 intento = 2
                 temporal = 2
-                velocidad = 15
+                velocidad = 13
                 tiempo_inicio = 23
                 tiempo = 40
                 aux_intento = intento
@@ -498,7 +500,7 @@ def secuencia_logica():
                 #nivel = 1
                 aciertos = 1
                 #aux_estado = 'NIVEL_1'
-                velocidad = 18
+                velocidad = 15
                 channel.queue(sL0_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 print ("Entro a la roja")
@@ -515,7 +517,7 @@ def secuencia_logica():
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4'  
                 channel.queue(sL0_6)
-                velocidad = 15
+                velocidad = 13
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
                 
@@ -527,7 +529,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/Mal_largo.mp4' 
-                velocidad = 15
+                velocidad = 13
                 channel.queue(sL0_7)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -540,7 +542,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1    
                 ruta = 'FONDOS/Mal_largo.mp4' 
-                velocidad = 15
+                velocidad = 13
                 channel.queue(sL0_8)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -643,7 +645,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/Mal_largo.mp4' 
-                velocidad = 17
+                velocidad = 14
                 channel.queue(sL1_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -652,7 +654,7 @@ def secuencia_logica():
                 t_amarillo = False 
                 aciertos = 1
                 ruta = 'FONDOS/Bien_largo.mp4' 
-                velocidad = 15
+                velocidad = 14
                 channel.queue(sL1_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 nivel = 1
@@ -669,7 +671,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/Mal_largo.mp4' 
-                velocidad = 17
+                velocidad = 14
                 channel.queue(sL1_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -680,7 +682,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1    
                 ruta = 'FONDOS/Mal_largo.mp4'  
-                velocidad = 15
+                velocidad = 13
                 channel.queue(sL1_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -779,7 +781,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4' 
-                velocidad = 26
+                velocidad = 20
                 channel.queue(sL2_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -789,7 +791,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4' 
-                velocidad = 26
+                velocidad = 20
                 channel.queue(sL2_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -799,7 +801,7 @@ def secuencia_logica():
                 t_verde = False 
                 aciertos = 1 
                 ruta = 'FONDOS/Bien.mp4' 
-                velocidad = 22
+                velocidad = 17
                 channel.queue(sL2_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -810,7 +812,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1    
                 ruta = 'FONDOS/Mal_largo.mp4' 
-                velocidad = 19
+                velocidad = 17
                 channel.queue(sL2_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -909,7 +911,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL3_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -919,7 +921,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL3_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -929,7 +931,7 @@ def secuencia_logica():
                 t_verde = False 
                 aciertos = 1 
                 ruta = 'FONDOS/Bien.mp4' 
-                velocidad = 26
+                velocidad = 20
                 channel.queue(sL3_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -940,7 +942,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1    
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL3_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1040,7 +1042,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL4_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1050,7 +1052,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL4_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1060,7 +1062,7 @@ def secuencia_logica():
                 t_verde = False 
                 aciertos = 1
                 ruta = 'FONDOS/Bien_largo.mp4' 
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL4_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1071,7 +1073,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1  
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL4_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1171,7 +1173,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL5_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1181,7 +1183,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL5_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1191,7 +1193,7 @@ def secuencia_logica():
                 t_verde = False 
                 aciertos = 1
                 ruta = 'FONDOS/Bien_largo.mp4' 
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL5_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1202,7 +1204,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1  
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL5_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1302,7 +1304,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL6_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1312,7 +1314,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL6_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1323,7 +1325,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1  
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL6_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1333,7 +1335,7 @@ def secuencia_logica():
                 t_azul = False
                 aciertos = 1
                 ruta = 'FONDOS/Bien_largo.mp4' 
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL6_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1433,7 +1435,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL7_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1442,7 +1444,7 @@ def secuencia_logica():
                 t_amarillo = False 
                 aciertos = 1
                 ruta = 'FONDOS/Bien_largo.mp4' 
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL7_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1453,7 +1455,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4' 
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL7_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1464,7 +1466,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1  
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 28
+                velocidad = 20
                 channel.queue(sL7_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1564,7 +1566,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL8_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1574,7 +1576,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4'   
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL8_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1585,7 +1587,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1  
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL8_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1595,7 +1597,7 @@ def secuencia_logica():
                 t_azul = False
                 aciertos = 1
                 ruta = 'FONDOS/Bien_largo.mp4'  
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL8_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1694,7 +1696,7 @@ def secuencia_logica():
                 t_roja = False
                 aciertos = 1
                 ruta = 'FONDOS/Bien_largo.mp4'
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL9_2)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1704,7 +1706,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1
                 ruta = 'FONDOS/mal.mp4' 
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL9_3)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1715,7 +1717,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1 
                 ruta = 'FONDOS/mal.mp4' 
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL9_4)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1726,7 +1728,7 @@ def secuencia_logica():
                 aciertos = 0
                 intento = intento - 1  
                 ruta = 'FONDOS/mal.mp4'  
-                velocidad = 16
+                velocidad = 14
                 channel.queue(sL9_5)
                 rv.reproducir_video(ruta, width, height, velocidad)
                 pygame.mixer.Channel.stop(channel)
@@ -1746,7 +1748,7 @@ def secuencia_logica():
             print("Entro")
             pygame.mixer.Channel.stop(channel)
             ruta = 'FONDOS/Tutorial_final.mp4'  
-            velocidad = 24
+            velocidad = 20
             channel.queue(sL_10)
             rv.reproducir_video(ruta, width, height, velocidad)
             run = False
@@ -1754,6 +1756,8 @@ def secuencia_logica():
         pygame.display.update()
 
     return(matriz)
+
+
 
 
 
