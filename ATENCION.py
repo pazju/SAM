@@ -945,6 +945,7 @@ def atencion(screen_width, screen_height):
 
         if level == 'TUTO_1':
             actual_level = 'TUTO_1'
+            pygame.mixer.Sound.stop(sIntro)
             pygame.mixer.Sound.play(sTuto_1)
             if video_tuto_1 == 1:
                     #play_video(tuto, 15, screen_width, screen_height) # PAZ
