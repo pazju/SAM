@@ -25,7 +25,7 @@ LI = [[0,0,0,0],
       [0,0,0,0],
       [0,0,0,0],
       [0,0,0,0]]
-
+#level = 'INICIO'
 # Colores
 # https://htmlcolorcodes.com/es/tabla-de-colores/
 color_red = (255,0,0)
@@ -3229,9 +3229,9 @@ def Frth_level():
         # Primero lo primero. Si  ya está mostrada o descubierta, no hacemos nada
         if 0 <= x_cuadro < cuadros_cols and 0 <= y_cuadro < cuadros_rows:
             cuadro = cuadros4[y_cuadro][x_cuadro]
-            """if cuadro.mostrar4 or cuadro.descubierto4:
+            if cuadro.mostrar4 or cuadro.descubierto4:
                 # continue ignora lo de abajo y deja que el ciclo siga
-                return"""
+                return
             # Si es la primera vez que tocan la imagen (es decir, no están buscando el par de otra, sino apenas
             # están descubriendo la primera)
             if x1_4 is None and y1_4 is None:# or acierto_2 == 1:
@@ -3720,9 +3720,9 @@ def Ffth_level():
         # Primero lo primero. Si  ya está mostrada o descubierta, no hacemos nada
         if 0 <= x_cuadro < cuadros_cols and 0 <= y_cuadro < cuadros_rows:
             cuadro = cuadros5[y_cuadro][x_cuadro]
-
+            if cuadro.mostrar5 or cuadro.descubierto5:
                 # continue ignora lo de abajo y deja que el ciclo siga
-                #return
+                return
             # Si es la primera vez que tocan la imagen (es decir, no están buscando el par de otra, sino apenas
             # están descubriendo la primera)
 
@@ -4211,9 +4211,9 @@ def Sxth_level():
         # Primero lo primero. Si  ya está mostrada o descubierta, no hacemos nada
         if 0 <= x_cuadro < cuadros_cols and 0 <= y_cuadro < cuadros_rows:
             cuadro = cuadros6[y_cuadro][x_cuadro]
-            """if cuadro.mostrar4 or cuadro.descubierto4:
+            if cuadro.mostrar6 or cuadro.descubierto6:
                 # continue ignora lo de abajo y deja que el ciclo siga
-                return"""
+                return
             # Si es la primera vez que tocan la imagen (es decir, no están buscando el par de otra, sino apenas
             # están descubriendo la primera)
             if x1_6 is None and y1_6 is None:# or acierto_2 == 1:
@@ -4708,9 +4708,9 @@ def Svnth_level():
         # Primero lo primero. Si  ya está mostrada o descubierta, no hacemos nada
         if 0 <= x_cuadro < cuadros_cols and 0 <= y_cuadro < cuadros_rows:
             cuadro = cuadros7[y_cuadro][x_cuadro]
-            """if cuadro.mostrar4 or cuadro.descubierto4:
+            if cuadro.mostrar7 or cuadro.descubierto7:
                 # continue ignora lo de abajo y deja que el ciclo siga
-                return"""
+                return
             # Si es la primera vez que tocan la imagen (es decir, no están buscando el par de otra, sino apenas
             # están descubriendo la primera)
             if x1_7 is None and y1_7 is None:# or acierto_2 == 1:
@@ -5199,9 +5199,9 @@ def Eighth_level():
         # Primero lo primero. Si  ya está mostrada o descubierta, no hacemos nada
         if 0 <= x_cuadro < cuadros_cols and 0 <= y_cuadro < cuadros_rows:
             cuadro = cuadros8[y_cuadro][x_cuadro]
-            """if cuadro.mostrar4 or cuadro.descubierto4:
+            if cuadro.mostrar8 or cuadro.descubierto8:
                 # continue ignora lo de abajo y deja que el ciclo siga
-                return"""
+                return
             # Si es la primera vez que tocan la imagen (es decir, no están buscando el par de otra, sino apenas
             # están descubriendo la primera)
             if x1_8 is None and y1_8 is None:# or acierto_2 == 1:
@@ -5702,9 +5702,9 @@ def Nnth_level():
         # Primero lo primero. Si  ya está mostrada o descubierta, no hacemos nada
         if 0 <= x_cuadro < cuadros_cols and 0 <= y_cuadro < cuadros_rows:
             cuadro = cuadros9[y_cuadro][x_cuadro]
-            """if cuadro.mostrar4 or cuadro.descubierto4:
+            if cuadro.mostrar9 or cuadro.descubierto9:
                 # continue ignora lo de abajo y deja que el ciclo siga
-                return"""
+                return
             # Si es la primera vez que tocan la imagen (es decir, no están buscando el par de otra, sino apenas
             # están descubriendo la primera)
             if x1_9 is None and y1_9 is None:# or acierto_2 == 1:
@@ -6196,9 +6196,9 @@ def Tnth_level():
         # Primero lo primero. Si  ya está mostrada o descubierta, no hacemos nada
         if 0 <= x_cuadro < cuadros_cols and 0 <= y_cuadro < cuadros_rows:
             cuadro = cuadros10[y_cuadro][x_cuadro]
-            """if cuadro.mostrar4 or cuadro.descubierto4:
+            if cuadro.mostrar10 or cuadro.descubierto10:
                 # continue ignora lo de abajo y deja que el ciclo siga
-                return"""
+                return
             # Si es la primera vez que tocan la imagen (es decir, no están buscando el par de otra, sino apenas
             # están descubriendo la primera)
             if x1_10 is None and y1_10 is None:# or acierto_2 == 1:
